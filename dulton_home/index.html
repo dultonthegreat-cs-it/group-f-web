@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- Simplified HTML for a beginner: uses Bootstrap but keeps structure minimal -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> <!-- text encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- responsive -->
+    <title>Hill Academy</title>
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Local styles (keeps custom styles separate) -->
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+
+    <!-- Simple navbar with brand and links -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Hill Academy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero: Bootstrap carousel with three slides (simple markup) -->
+    <div class="container mt-4">
+      <div id="hero" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- Use a local image file (kids5.jpg) instead of a remote URL -->
+            <img src="kids5.jpg" class="d-block w-100 carouselimg" alt="Students on campus">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Welcome</h2>
+              <p>Welcome to Hill Academy — learn, lead, belong.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Use a local webp image (kid6.webp) for smaller filesize where supported -->
+            <img src="kid6.webp" class="d-block w-100 carouselimg" alt="Classroom">
+          </div>
+          <div class="carousel-item">
+            <!-- Another local image (kids8.webp) as the third slide -->
+            <img src="kids8.webp" class="d-block w-100 carouselimg" alt="Students working together">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- About section: expanded with more school information -->
+    <section id="about" class="container my-5">
+      <h3>About Hill Academy</h3>
+      <p>Hill Academy is a leading independent school dedicated to fostering academic excellence, creativity, and character. Since our founding, we've served students from kindergarten through 12th grade with a commitment to personalized learning and community engagement.</p>
+      <p class="text-muted"><strong>Our Mission:</strong> To inspire students to think critically, act compassionately, and lead with purpose in an ever-changing world.</p>
+      <p class="text-muted"><strong>Why Choose Hill Academy?</strong></p>
+      <ul class="text-muted">
+        <li>Small class sizes ensure personalized attention for each student</li>
+        <li>Rigorous curriculum balances academics with arts and athletics</li>
+        <li>Experienced faculty dedicated to student success</li>
+        <li>Strong college placement record with scholarships and advanced placement</li>
+        <li>Safe, inclusive, and supportive community for all learners</li>
+      </ul>
+    </section>
+
+    <!-- Programs: three simple cards using Bootstrap grid -->
+    <section id="programs" class="container mb-5">
+      <h4 class="mb-4">Our Programs</h4>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="cardbox">
+            <div class="card-body">
+              <h6 class="card-title">Academics</h6>
+              <p class="card-text small">College-prep curriculum with strong STEM, humanities, and arts programs. Small classes ensure personalized feedback and support.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cardbox">
+            <div class="card-body">
+              <h6 class="card-title">Athletics & Clubs</h6>
+              <p class="card-text small">Varsity sports, intramurals, and 20+ clubs help students discover passions and build leadership skills.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cardbox">
+            <div class="card-body">
+              <h6 class="card-title">Community Service</h6>
+              <p class="card-text small">Students engage in meaningful service learning and volunteer work to make a positive impact locally and globally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Footer area combined for simplicity -->
+    <footer class="bg-light py-4">
+      <div class="container text-center small text-muted">
+        <div>Contact: <a href="mailto:admissions@hillacademy.edu">admissions@hillacademy.edu</a></div>
+        <div class="mt-2">© Hill Academy — 123 Hill St, Hometown</div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+<!-- Document type: tells the browser to use HTML5 parsing -->
