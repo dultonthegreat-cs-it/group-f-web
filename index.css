@@ -3,7 +3,7 @@
 /* Page background with image and overlay for readability */
 body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background-image: url('kids7.jpg');
+  background-image: url('https://dultonthegreat-cs-it.github.io/group-f-web/dulton_home/kids7.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
