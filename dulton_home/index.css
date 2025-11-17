@@ -1,0 +1,79 @@
+/* Hill Academy - Simple CSS for a beginner */
+
+/* Page background with image and overlay for readability */
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background-image: url('kids7.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #212529;
+}
+
+/* Semi-transparent overlay on top of background image
+   
+   What is this doing?
+   - We use body::before to create a pseudo-element (a fake element that isn't in the HTML)
+   - This pseudo-element sits between the background image and the page content
+   - It acts like a translucent layer that lightens the image, making text more readable
+   
+   Why do we need it?
+   - The background image (kids7.jpg) has colors that might make text hard to read
+   - The white overlay brightens the image without covering it completely
+   - This improves contrast and readability of text over the background
+   
+   How it works:
+   - position: fixed keeps the overlay stuck in place as you scroll
+   - z-index: -1 puts it BEHIND the page content but IN FRONT OF the background image
+   - rgba(255, 255, 255, 0.85) is white with 85% opacity (15% transparent)
+   - The 0.85 value can be adjusted: higher = darker overlay, lower = lighter
+*/
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Carousel images: fixed height, fill the space */
+
+/* Carousel images: fixed height, fill the space */
+.carouselimg {
+  height: 420px;
+  object-fit: cover;
+}
+
+/* Mobile: smaller carousel images */
+@media (max-width: 768px) {
+  .carouselimg { height: 240px; }
+}
+
+/* Cards: rounded corners */
+
+/* Cards: rounded corners */
+.cardbox {
+  border-radius: 12px;
+}
+
+/* Focus outlines for keyboard navigation */
+a:focus, button:focus, .btn:focus, .navbar-toggler:focus {
+  outline: 3px solid rgba(25, 118, 210, 0.15);
+  outline-offset: 2px;
+}
+
+/* Container padding */
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Footer border */
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
