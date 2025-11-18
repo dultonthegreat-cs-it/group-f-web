@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta viewport="content-width=device-width, initial-scale=1.0">
+  <title>Apply Now – Commerce & Business School</title>
+  <link rel="stylesheet" href="apply.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Apply Now</h1>
+  <p>Begin your journey with our Commerce & Business Programs</p>
+</header>
+
+<main>
+  <div class="form-section">
+    <h2>Application Form</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data" class="apply-form">
+
+      <!-- Fieldset -->
+      <fieldset class="form-box">
+        <legend>Application Details</legend>
+
+        <!-- Title -->
+        <label for="title">Title</label>
+        <select id="title" name="title" required>
+          <option value="">Enter title</option>
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Miss">Miss</option>
+        </select>
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Nationality -->
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" name="nationality" placeholder="e.g. Ugandan" required>
+
+        <!-- Email -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" maxlength="10" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required>
+
+        <!-- Academic Information -->
+        <label for="year_s4">Year of Completion (S4)</label>
+        <input type="number" id="year_s4" name="year_s4" placeholder="e.g. 2020" min="1990" max="2030" required>
+
+        <label for="year_s6">Year of Completion (S6)</label>
+        <input type="number" id="year_s6" name="year_s6" placeholder="e.g. 2022" min="1990" max="2030">
+
+        <!-- Upload Academic Documents -->
+        <label for="documents">Upload Academic Requirements</label>
+        <input type="file" id="documents" name="documents" accept=".pdf,.jpg,.jpeg,.png" required>
+
+        <input type="file" id="documents" name="documents" accept=".pdf,.jpg,.jpeg,.png" required>
+
+        <!-- Program Selection -->
+        <label for="program">Program of Interest</label>
+        <select id="program" name="program" required>
+          <option value="">Select a program</option>
+          <option value="business_admin">Business Administration</option>
+          <option value="accounting">Accounting & Finance</option>
+          <option value="commerce">Bachelor of Commerce</option>
+          <option value="marketing">Marketing & Management</option>
+        </select>
+
+        <!-- Other Relevant Information -->
+        <label for="otherinfo">Reason why the institution should admit you</label>
+        <textarea id="otherinfo" name="otherinfo" rows="4" placeholder="Reason why you should be admitted"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-apply">Submit Application</button>
+
+      </fieldset>
+
+    </form>
+  </div>
+</main>
+
+<footer class="footer">
+  <p> email us at hillacademy@gmail.com, akoknoon12@Ggmail.com</p>
+</footer>
+
+</body>
+</html>
